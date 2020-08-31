@@ -10,3 +10,7 @@ You will need Python as well as the following packages:
 - pip install matplotlib
 - pip install PySimpleGUI
 
+I recommend running this via Powershell:
+
+python filescanner.py
+
