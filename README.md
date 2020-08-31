@@ -6,9 +6,7 @@ The point of this is to show if a given filesystem is being modified over time o
 
 You will need Python as well as the following packages:
 
--pip install folderstats
-
--pip install matplotlib
-
--pip install PySimpleGUI
+- pip install folderstats
+- pip install matplotlib
+- pip install PySimpleGUI
 
