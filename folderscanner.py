@@ -16,11 +16,11 @@ df['Time'] = df['mtime'] - df['ctime']
 df['days'] = df['Time'].dt.days
 df.loc[df['days'] > 0, 'days2'] = df['days']
 df.loc[df['days'] < 0, 'days2'] = 0
-results = df.groupby(['ctime', 'mtime']).sum()
+# results = df.groupby(['ctime', 'mtime']).sum()
 
 plt.plot_date(df['ctime'], df['days2'])
 
-results.to_excel('file_data_info.xlsx')
+# results.to_excel('file_data_info.xlsx')
 sg.popup('All done! Excel saved to folder')
 
 plt.show()
