@@ -21,6 +21,6 @@ df.loc[df['days'] < 0, 'days2'] = 0
 plt.plot_date(df['ctime'], df['days2'])
 
 # results.to_excel('file_data_info.xlsx')
-sg.popup('All done! Excel saved to folder')
+sg.popup('All done!')
 
 plt.show()
