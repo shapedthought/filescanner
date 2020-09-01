@@ -19,14 +19,9 @@ df.loc[df['days'] > 0, 'days2'] = df['days']
 df.loc[df['days'] < 0, 'days2'] = 0
 results = df.groupby(['ctime', 'mtime']).sum()
 
-# plt.plot_date(df['ctime'], df['Size GB'])
 plt.plot_date(df['ctime'], df['days2'])
-# plt.plot_date(df['mtime'], df['Size GB'])
 
-# ax = plt.subplot(111)
-# ax.bar(df['mtime'], df['Size GB'], width=10)
-# ax.xaxis_date()
-
-# plt.savefig('createdVsModified.png')
+results.to_excel('file_data_info.xlsx')
+sg.popup('All done!')
 
 plt.show()
