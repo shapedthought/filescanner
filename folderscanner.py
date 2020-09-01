@@ -2,7 +2,6 @@ import folderstats
 import matplotlib.pyplot as plt
 import PySimpleGUI as sg
 from pathlib import Path
-# path = Path('E:/Images')
 
 sg.theme('Dark Blue 3')
 
@@ -22,6 +21,6 @@ results = df.groupby(['ctime', 'mtime']).sum()
 plt.plot_date(df['ctime'], df['days2'])
 
 results.to_excel('file_data_info.xlsx')
-sg.popup('All done!')
+sg.popup('All done! Excel saved to folder')
 
 plt.show()
